@@ -923,8 +923,9 @@ class PaginatedDataTable2State extends State<PaginatedDataTable2> {
           child: SingleChildScrollView(
             dragStartBehavior: widget.dragStartBehavior,
             scrollDirection: Axis.horizontal,
-            reverse: true,
+            //reverse: true,
             child: Row(
+              textDirection: TextDirection.ltr,
               children: footerWidgets,
             ),
           ),
